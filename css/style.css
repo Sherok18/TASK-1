@@ -1,0 +1,773 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(17, 17, 40,0.6);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+}
+.header img{
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+    float: left;
+}
+li{
+    display: inline-block;
+    float: right;
+    padding: 15px 50px;
+}
+ul li a{
+    color: rgb(217, 216, 236);
+    text-decoration: none;
+    transition: 0.2S;
+}
+.HEADER ul li a:hover{
+    border-bottom: 4px solid  rgb(148, 126, 175);
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.home{
+    height: 100vh;
+    background-image: url(../images/home/pexels-shawfott-￼-17154777\ \(1\).jpg);
+    background-size: cover;
+    position: relative;
+}
+.home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(61, 61, 97,0.7);
+}
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.home-h2{
+    font-size: 40px;
+    color: rgb(218, 219, 236);
+}
+.home-p{
+    letter-spacing: 2px;
+    margin: 15px 0px;
+    color: rgb(218, 219, 236);
+}
+.btn{
+    width: 120px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn2{
+    background-color: rgb(97, 97, 162);
+    color: white;
+}
+.home-content .btn:hover{
+    opacity: 0.7;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.WELCOME{
+    height: 100vh;
+}
+.welcome-container{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+}
+.WELCOME-H2{
+display: inline-block;
+padding-top: 150px;
+margin-left: 35%;
+color: rgb(42, 42, 73);
+font-size: 40px;
+}
+.line{
+    width: 80px;
+    height: 5px;
+    background-color: rgb(148, 126, 175);
+    margin: auto;
+}
+.welcome-parent{
+    margin: 80px auto;
+    width: 90%;
+    overflow: auto;
+    height: 250px;
+}
+.welcome-item{
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+    border: 2px solid rgb(196, 179, 236);
+    font-size: 20px;
+    position: relative;
+    color: rgb(42, 42, 73);
+}
+.item1{
+    background-image: url(../images/makeup/Fashion\,\ wallpapers\,\ quotes\,\ celebrities\ and\ so\ much\ more.png);
+    background-size :cover;
+  
+}
+.item2{
+margin: 0px 5%;
+background-image: url(../images/skincare/Skincare\ aesthetic.jpg);
+background-size :cover;
+
+}
+.item3{
+    background-image: url(../images/haircare/Perfectly\ Straight\ Hair.jpg);
+    background-size :cover;
+    
+}
+.welcome-a{
+    color: rgb(31, 27, 36);
+    position: absolute;
+    z-index: 3;
+   transform: translate(-50%,0);
+   text-decoration: none;
+} 
+ .welcome-info{
+    position: absolute;
+    z-index: 3;
+  margin-left: 10px;
+}
+.ic{
+    font-size: 30px;
+}
+.welcome-item:after{
+    position: absolute;
+    content:"" ;
+    width: 0px;
+    height: 0px;
+    top:0;
+    left:0;
+    background-color: rgb(184, 165, 210);
+    opacity: 0;
+}
+.welcome-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.works{
+    background-color: rgb(228, 226, 242);
+    height: 900px;
+}
+.works-container{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+}
+.Works-H2{
+display: inline-block;
+padding-top: 50px;
+margin-left: 38%;
+color: rgb(42, 42, 73);
+font-size: 40px;
+}
+.wORKS-parent{
+    margin: 80px auto;
+    width: 90%;
+    overflow: auto;
+    height: 250px;
+}
+.wORKS-item{
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    border: 2px solid rgb(196, 179, 236);
+    font-size: 20px;
+ color: rgb(30, 30, 52);
+ position: relative;
+}
+.item4{
+background-image: url(../images/makeup/Baked\ Blusher\ 05\ Piony\ Purple.jpg);
+background-size: cover;
+}
+.item5{
+    margin: 0px 5%;
+    background-image: url(../images/makeup/Is\ Armani\ Beauty’s\ Luminous\ Silk\ Foundation\ Worth\ the\ $65_\ \(2\).jpg);
+    background-size: cover;
+}
+.item6{
+    background-image: url(../images/haircare/Hair\ Straightener\ Brush\ Comb\,PERMODEL\ Straightening\ Brush\ with\ Adjustable\ Comb\ Teeth\,Hair\ Straightener\ with\ Negative\ Ions\ &\ 25S\ Fast\ Heating\ &\ 9\ Temp\ Setting\ &\ Anti-Scald_\(Pink\).png);
+    background-size: cover;
+}
+.item7{
+    background-image: url(../images/haircare/GHD\ Smart\ Hair\ Straightener.png);
+    background-size: cover;
+}
+.item8{
+    margin: 0px 5%;
+    background-image: url(../images/skincare/Los\ maquilladores\ dictan\ sentencia_\ este\ es\ el\ agua\ micelar\ que\ mejor\ funciona\ \(2\).jpg);
+    background-size: cover;
+}
+.item9{
+    background-image: url(../images/skincare/The\ Best\ Under-$15\ Products\ From\ Viral\ Skin-Care\ Brand\ The\ Ordinary\ \(2\).jpg);
+    background-size: cover;
+}
+.i5{
+    color: rgb(255, 255, 255);
+    background-color: rgb(28, 28, 50) ;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+   cursor: pointer;
+}
+.wORKS-info{
+  transform: translate(0px,50px);
+}
+.wORKS-item .works-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(170, 147, 189);
+    visibility: hidden;
+    opacity: 0; 
+}
+.wORKS-item:hover .works-overlay{
+    visibility: visible;
+    opacity: 0.7;
+    transition: 1s; 
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.offer{
+    margin-bottom: 50px;
+}
+.offer-container{
+    width: 90%;
+    margin: auto;
+    height: 200px;
+}
+.offer-H2{
+    display: inline-block;
+    padding-top: 120px;
+    margin-left: 39%;
+    color: rgb(42, 42, 73);
+    font-size: 40px;
+    }
+    .offer-line{
+        width: 80px;
+        height: 5px;
+        background-color: rgb(148, 126, 175);
+        margin: auto;
+    }
+    .offer-parent{
+        margin:  auto;
+        width: 90%;
+        overflow: auto;
+        height: 160px;
+    }
+    .offer-parent6{
+        margin-top: 70px;
+    }
+    .offer-parent7{
+        margin-top: -25px;
+    }
+    .offer-item{
+        float: left;
+        width: 30%;
+        height: 100%;
+        padding-top: 40px;
+        border: 2px solid rgb(232, 226, 241);
+        font-size: 20px;
+        position: relative;
+     color: rgb(0, 0, 0);
+    }
+    .item10{
+        background-image: url(../images/I\ Hated\ Powder\ Foundation\ Until\ I\ Tried\ This\ $40\ _Powder-No-Powder_.jpg);
+        background-size :cover;
+      
+    }
+    .item11{
+    margin: 0px 5%;
+    background-image: url(../images/Maybelline\ Lifter\ Gloss\ Lipgloss\ Review\ &\ Swatches\ -\ Musings\ of\ a\ Muse.jpg);
+    background-size :cover;
+    
+    }
+    .item12{
+        background-image: url(../images/Maybelline\ Sky\ High\ Waterproof\ _\ Mascara\ Makeup\,\ Volumizing\ Mascara\,\ Buildable\,.jpg);
+        background-size :cover;
+    }
+    .item13{
+            background-image: url(../images/Naked3\ Eyeshadow\ Palette\ -\ Urban\ Decay\ _\ Sephora.jpg);
+            background-size :cover;
+          
+     }
+        .item14{
+        margin: 0px 5%;
+        background-image: url(../images/Revolution\ Blush\ Palette\ \(1\).jpg);
+        background-size :cover;
+        
+     }
+     .item15{
+            background-image: url(../images/20\ Cosméticos\ de\ farmacia\ que\ son\ tan\ buenos\ como\ los\ más\ caros.jpg);
+            background-size :cover;
+    }
+     .offer-info{
+        position: absolute;
+        z-index: 3;
+      margin-left: 20px;
+    }
+    .i10{
+        display: inline;
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .offer-h3{
+        display: inline;
+    }
+    .offer-p{
+        margin-left: 50px;
+        display: inline;
+    }
+    .offer-item:after{
+        position: absolute;
+        content:"" ;
+        width: 0px;
+        height: 0px;
+        top:0;
+        left:0;
+        background-color: rgb(232, 226, 241);
+        opacity: 0;
+    }
+    .offer-item:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+    /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    .choose{
+        height: 600px;
+        overflow: auto;
+        background-color:rgb(245, 245, 249) ;
+        padding-top: 150px;
+        height: 800px;
+    }
+    .choose-h2{
+        color: rgb(42, 42, 73);
+        font-size: 50px;
+    }
+    .choose-line{
+        width: 120px;
+        height: 5px;
+        background-color: rgb(148, 126, 175);
+        margin-bottom: 50px;
+    }
+    .choose-info{
+        margin-left: 150px;
+        display: inline;
+        float: left;
+        font-size: 20px;
+    }
+    .choose-img{
+        display: inline;
+        float: right;
+        margin-right: 100px;
+
+    }
+    .i20{
+        display: inline;
+        border: 2px solid rgb(148, 126, 175);
+        color:rgb(148, 126, 175) ;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        font-size: 18px;
+        padding: 2px 0px 0px 2px;
+    }
+    .choose-p2{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .choose-circles{
+        border: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        float: left;
+        margin-top: 10px;
+    }
+    .circles1{
+         background-color: rgb(148, 126, 175);
+         margin-left: 250px;
+    }
+    .circles2 {
+        background-color: rgb(232, 221, 250) ;
+        margin-left: 20px;
+    }
+    .circles3{
+        background-color: rgb(232, 221, 250) ;
+        margin-left: 20px;
+    }
+    .circles2:hover{
+        background-color: rgb(148, 126, 175);
+    }
+    .circles3:hover{
+        background-color: rgb(148, 126, 175);
+    }
+    /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    .awards{
+        height: 250px;
+        background: url(../images/pexels-baraa-jalahej-5156572.jpg) no-repeat fixed ;
+        background-size: cover;
+        margin-bottom: 100px;
+    }
+    .div1{
+        float: left;
+        margin-top: 100px;
+        margin-left: 200px;
+        font-size: 20px;
+        text-align: center;
+        color: rgb(42, 42, 73);
+    }
+    .awards-i{
+        font-size: 25px;
+    }
+    .awards-p{
+        font-size: 15px;
+    }
+    .awards-parent{
+        overflow: auto;   
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    .price{
+        height: 600px;
+    }
+    .price-container{
+        width: 90%;
+        margin: auto;
+        height: 200px;
+    }
+    .price-H2{
+    display: inline-block;
+    margin-left: 40%;
+    color: rgb(42, 42, 73);
+    font-size: 40px;
+    }
+    .price-line{
+        width: 80px;
+        height: 5px;
+        background-color: rgb(148, 126, 175);
+        margin: auto;
+    }
+    .price-parent{
+        margin: 80px auto;
+        width: 90%;
+        overflow: auto;
+        height: 350px;   
+    }
+    .price-item{
+        float: left;
+        width: 30%;
+        height: 100%;
+        padding-top: 60px;
+        text-align: center;
+        border: 2px solid rgb(221, 212, 242);
+        font-size: 20px;
+        color: rgb(42, 42, 73);
+        position: relative;
+    }
+    .item20{
+        margin: 0px 5%;
+    }
+    .PRICE-DIV{
+        margin-top: 15PX;
+        border:2px solid rgb(71, 58, 108) ;
+        width: 80PX;
+        height: 80PX;
+        border-radius: 50%;
+        padding-TOP: 20PX;
+        margin-left: 140PX;
+        font-size: 25PX;
+    }
+    .PRICE-P{
+        font-size: 18PX;
+    }
+    .PRICE-BTN{
+        width: 120px;
+        height: 30px;
+        border:3px solid rgb(71, 58, 108) ;
+        background-color: rgb(239, 240, 247);
+    }
+    .price-item:after {
+        position: absolute;
+        content:"";
+        width: 100%;
+        height: 0px;
+        top:0;
+        left:0;
+        background-color: rgb(230, 223, 239);
+        opacity: 0;
+    }
+    .price-item:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+    .price-item:hover {
+        color: rgb(55, 70, 233);
+        transition: 0.5s;
+    }
+    .price-item:hover .price-p{
+        color: rgb(42, 42, 73);
+        transition: 0.5s;
+    }
+    /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    .founders{
+        background: url(../images/pexels-lucas-george-wendt-4592706.jpg) no-repeat fixed;
+        background-size: cover;
+        height: 320px;
+        padding-left: 10%;
+    }
+    .founder-container{
+        width: 80%;
+    }
+    .founder-parent{
+        overflow: auto;
+        width: 100%;
+    }
+    .item30{
+        margin-left: 9%;
+    }
+    .founder-item{
+        float: left ;
+        margin-top: 120px;
+        overflow: auto;
+        color:  rgb(217, 216, 236);
+        width: 40%;
+    }
+    .founder-img{
+        border:0;
+        border-radius: 50%;
+        float: left;
+    }
+    .founder-info{
+        float: left;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .founder-p{
+        font-size: 20px;
+        margin-top: 5px;
+        color: rgb(218, 185, 243);
+    }
+    .founder-p2{
+        margin-left: 10px;
+        font-size:18px ;
+    }
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+ .team{
+   margin-top: 100px;
+ }
+.team-container{
+    width:80% ;
+    margin: auto;
+}
+.team-H2{
+    display: inline-block;
+    margin-left: 43%;
+    color: rgb(42, 42, 73);
+    font-size: 40px;
+    }
+    .team-line{
+        width: 60px;
+        height: 5px;
+        background-color: rgb(148, 126, 175);
+        margin: auto;
+        MARGIN-BOTTOM: 80px;
+    }
+.team-parent{
+    width: 100%;
+    overflow: auto;
+}
+.team-item{
+    width: 30%;
+    float: left;
+    background-color:rgb(245, 242, 248) ;
+    text-align: center;
+   position: relative;
+}
+.item40{
+    margin:0 5% 0 5%;
+}
+.team-img{
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+}
+.team-img2{
+    width:100%;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(41, 51, 128, 0.7);
+    visibility: hidden;
+    opacity: 0;
+}
+.team-item:hover .team-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.team-img .team-overlay a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(52, 57, 94);
+    color: #ffffff;
+    margin-left: auto;
+}
+.team-overlay a i{
+    line-height: 50px;
+}
+.team-item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top:0 ;
+    left: 0;
+    background-color: rgb(52, 57, 94);
+    opacity: 0;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.NEWS{
+    height: 100vh;
+}
+.NEWS-container{
+    width: 80%;
+    margin: auto;
+    background-color:rgb(96, 96, 144) ;
+}
+.news-H2{
+display: inline-block;
+margin-left: 40.5%;
+color: rgb(42, 42, 73);
+font-size: 40px;
+margin-top: 100px;
+}
+.news-line{
+    width: 80px;
+    height: 5px;
+    background-color: rgb(148, 126, 175);
+    margin: auto;
+}
+.news-parent{
+    margin: 60px auto;
+    width: 100%;
+    overflow: auto;  
+height:500px
+}
+.news-item{
+    float: left;
+    width: 30%;
+height: 100%;
+background-color: rgb(255, 255, 255);
+padding-left: 15px;
+color: rgb(42, 42, 73);
+position: relative;
+}
+.item50{
+    margin:0 5% 0 5%;
+}
+.news-icons{
+    font-size: 13px;
+}
+.icon{
+    color: rgb(58, 57, 142);
+}
+.news-p{
+    text-transform: capitalize;
+}
+.news-a{
+    font-size: 18px;
+    margin-left: 45px;
+    color:rgb(94, 94, 146)
+}
+.news-item:after {
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 0px;
+    top:0;
+    left:0;
+    background-color: rgb(192, 191, 232);
+    opacity: 0;
+}
+.news-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.end{
+    height: 330px;
+    background-color: rgb(43, 43, 81);
+    padding: auto;
+}
+.end-ico{
+    margin-left: 500px;
+    display: inline;
+}
+.a-ico{
+    position: relative;
+    margin-left: 65px;
+}
+.ico{
+    position: absolute;
+    z-index: 4;
+    color:rgb(255, 255, 255);
+    border: 0;
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    background-color: rgb(110, 110, 191);
+    padding:20px ;
+    font-size: 20px;
+   
+}
+.end-img{
+    margin:80px 0px 20px 700px;
+}
+.ico:hover{
+    background-color: rgb(78, 78, 141);
+    cursor: pointer;
+}
+.end-p{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 13px;
+    color:rgb(232, 232, 249);
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
